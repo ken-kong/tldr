@@ -34,3 +34,11 @@
 - Fetch and follow the logs of a container:
 
 `docker logs -f {{container_name}}`
+
+- Copy a file or directory from the container's file system to local machine
+
+`docker cp {{container_name}}:{{src_path}} {{dest_path}}|-`
+
+- Copy a file or directory from local filesystem to the container.
+
+`docker cp {{src_path}}|- {{container_name}}:{{dest_path}}`
